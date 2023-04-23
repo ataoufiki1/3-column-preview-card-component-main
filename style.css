@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.attribution {
+     font-size: 11px;
+      text-align: center; 
+    }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+ body{
+     background-color:  hsl(0, 0%, 95%);
+ }
+
+ /*Start container*/
+.container{
+    display: flex;
+    
+    width: 100%;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*first card*/
+.container .card:nth-of-type(1){
+background-color:  hsl(31, 77%, 52%);
+border-radius: 10px 0 0 10px;
+}
+
+.card{
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+/*Second card*/
+
+
+.container .card:nth-of-type(1){
+    background-color: hsl(31, 77%, 52%);
+    }
+
+.container .card:nth-of-type(2){
+background-color: hsl(184, 100%, 22%);
+}
+
+
+/*card 3*/
+
+
+.container .card:nth-of-type(3){
+background-color: hsl(179, 100%, 13%);
+border-radius: 0 10px 10px 0;
+}
+
+.card h1{
+    font-family: "Big Shoulders Display",sans-serif;
+    /*font-family : "Big Shoulders Display ", cursive ;*/
+    text-transform:uppercase ;
+    color: aliceblue;
+    font-size: 33px;
+}
+
+.card p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: aliceblue;
+    font-size: 12px;
+}
+
+.card .btn{
+  
+    padding: 11px;
+    border-radius: 18px;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: aliceblue;
+}   
+
+.bt{
+    color: hsl(31, 77%, 52%);
+    }
+
+.btt{
+color: hsl(184, 100%, 22%);
+}
+
+
+
+
+
+.bttt{
+color: hsl(179, 100%, 13%);
+
+}
+
+ /*End container*/
+
+ /*scren mobile media*/
+
+ @media (max-width:600px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card{
+        width: 300px;
+        
+    }
+    
+    .container .card:nth-of-type(1){
+       border-radius:10px 10px 0 0 ;
+        }
+
+        .container .card:nth-of-type(2){
+           
+            }
+            
+            
+            /*card 3*/
+            
+            
+            .container .card:nth-of-type(3){
+           
+            border-radius: 0 0 10px 10px;
+            }
+ }
